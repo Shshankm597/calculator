@@ -14,7 +14,11 @@ export function Calulator() {
     }
 
     const calculate = () => {
-        setDisplayValue(parseFloat(eval(displayValue)).toPrecision(5).toString())
+        try {
+            setDisplayValue(parseFloat(eval(displayValue)).toPrecision(5).toString())
+        } catch(error) {
+            setDisplayValue("Error")
+        }
     }
 
     const handleClick = (value) => {
