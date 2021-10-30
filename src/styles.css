@@ -22,15 +22,75 @@ body {
   padding: 0.5rem;
 }
 
+.calcButton:nth-child(1) {
+  grid-area: item1;
+}
+.calcButton:nth-child(2) {
+  grid-area: item2;
+}
+.calcButton:nth-child(3) {
+  grid-area: item3;
+}
+.calcButton:nth-child(4) {
+  grid-area: item4;
+}
+.calcButton:nth-child(5) {
+  grid-area: item5;
+}
+.calcButton:nth-child(6) {
+  grid-area: item6;
+}
+.calcButton:nth-child(7) {
+  grid-area: item7;
+}
+.calcButton:nth-child(8) {
+  grid-area: item8;
+}
+.calcButton:nth-child(9) {
+  grid-area: item9;
+}
+.calcButton:nth-child(10) {
+  grid-area: item10;
+}
+.calcButton:nth-child(11) {
+  grid-area: item11;
+}
+.calcButton:nth-child(12) {
+  grid-area: item12;
+}
+.calcButton:nth-child(13) {
+  grid-area: item13;
+}
+.calcButton:nth-child(14) {
+  grid-area: item14;
+}
+.calcButton:nth-child(15) {
+  grid-area: item15;
+}
+.calcButton:nth-child(16) {
+  grid-area: plusButton;
+}
+.calcButton:nth-child(17) {
+  grid-area: equalButton;
+}
+
 .grid {
   display: grid;
   grid-gap: 2px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 5rem);
+  grid-template-areas:
+  'item1 item2 item3 item4'
+  'item5 item6 item7 item8'
+  'item9 item10 item11 item12'
+  'item13 item14 item15 plusButton'
+  'item13 equalButton equalButton plusButton';
 }
 
 .calcButton {
   border: none;
+  font-size: 1em;
+  font-weight: 500;
   background-color: #FAFAFA;
 }
 
@@ -63,9 +123,13 @@ body {
 
 .displayArea {
   width: 95%;
-  padding: 0 0.5rem;
-  height: 5rem;
+  padding: 2rem 0.5rem;
   border: none;
   text-align: right;
+}
+
+.displayArea[type="text"] {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
