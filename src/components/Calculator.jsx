@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles.css";
-import { Display } from ".";
+
 
 export function Calulator() {
     const [displayValue, setDisplayValue] = useState("");
@@ -18,7 +18,6 @@ export function Calulator() {
     }
 
     const handleClick = (value) => {
-        console.log(value)
         switch(value) {
             case 'C':
                 handleClear();
@@ -30,12 +29,9 @@ export function Calulator() {
                 setDisplayValue(displayValue.concat(value))
         }
     }
-
-    console.log(displayValue, "from Calc")
   
     return (
       <div>
-          {/* <Display props={displayValue}/> */}
           <input type="text" value={displayValue} readOnly className="displayArea"/>
           <div className="grid">
             {keypad.map((item, index) => {
