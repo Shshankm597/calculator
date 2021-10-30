@@ -1,12 +1,11 @@
 import "./styles.css";
-import { Calulator, Display } from "./components";
+import { Calulator } from "./components";
 
 export default function App() {
     return (
         <div className="app">
-          <div class="wrapper">
+          <div className="wrapper">
             <header className="calcHeader"> Betterhalf Calculator </header>
-            <Display />
             <Calulator />
           </div>
         </div>

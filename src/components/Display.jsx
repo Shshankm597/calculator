@@ -1,7 +1,8 @@
 
 
 export function Display(props) {
+    console.log(props)
     return (
-            <input value={props.userInput} className="displayArea"/>
+            <input value={props.displayValue} className="displayArea"/>
     )
 }
